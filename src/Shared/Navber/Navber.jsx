@@ -23,7 +23,7 @@ const Navber = () => {
                         {navItem}
                     </ul>
                     </div>
-                    <a className=""><NavLogo></NavLogo></a>
+                    <NavLogo></NavLogo>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

@@ -52,8 +52,8 @@ const Banner = () => {
                     <img src={slide2} className='h-[90vh] w-full' alt="" />
                     <div className="absolute flex items-center justify-center text-center left-0 top-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] h-full">
                     <div className='space-y-5 lg:w-1/2 md:w-1/2 w-full pl-10'>
-                    <h2 className='lg:text-6xl md:text-4xl text-2xl font-bold text-white'>Find Your Dream House</h2>
-                    <p className='text-white text-lg'> Vitae saepe sapiente iste totam ducimus laboriosam. Ullam accusantium magnam earum expedita nemo perferendis ipsum quasi enim eveniet aut, est nostrum blanditiis?</p>
+                    <h2 className='lg:text-6xl md:text-4xl text-2xl font-bold text-white font-cursive'>Find Your Dream House</h2>
+                    <p className='text-white text-lg font-body'> Vitae saepe sapiente iste totam ducimus laboriosam. Ullam accusantium magnam earum expedita nemo perferendis ipsum quasi enim eveniet aut, est nostrum blanditiis?</p>
                     <div className='text-center flex gap-3 items-center justify-center'>
                         <button className="lg:py-3 md:py-3 py-2 px-5 rounded-md border-none text-white bg-red-600 ">Latest Project</button>
                         <button className="lg:py-3 md:py-3 py-2 px-5 rounded-md border  text-white border-white">More Details</button>
@@ -65,8 +65,8 @@ const Banner = () => {
                     <img src={slide1} className='h-[90vh] w-full' alt="" />
                     <div className="absolute flex items-center justify-center text-center left-0 top-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] h-full">
                     <div className='space-y-5 lg:w-1/2 md:w-1/2 w-full pl-10'>
-                    <h2 className='lg:text-6xl md:text-4xl text-2xl font-bold text-white'>Find Your Dream House</h2>
-                    <p className='text-white text-lg'> Vitae saepe sapiente iste totam ducimus laboriosam. Ullam accusantium magnam earum expedita nemo perferendis ipsum quasi enim eveniet aut, est nostrum blanditiis?</p>
+                    <h2 className='lg:text-6xl md:text-4xl text-2xl font-bold text-white font-cursive'>Find Your Dream House</h2>
+                    <p className='text-white text-lg font-body'> Vitae saepe sapiente iste totam ducimus laboriosam. Ullam accusantium magnam earum expedita nemo perferendis ipsum quasi enim eveniet aut, est nostrum blanditiis?</p>
                     <div className='text-center flex gap-3 items-center justify-center'>
                         <button className="lg:py-3 md:py-3 py-2 px-5 rounded-md border-none text-white bg-red-600 ">Latest Project</button>
                         <button className="lg:py-3 md:py-3 py-2 px-5 rounded-md border  text-white border-white">More Details</button>
@@ -78,8 +78,8 @@ const Banner = () => {
                     <img src={slide3} className='h-[90vh] w-full' alt="" />
                     <div className="absolute flex items-center justify-center text-center left-0 top-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] h-full">
                     <div className='space-y-5 lg:w-1/2 md:w-1/2 w-full pl-10'>
-                    <h2 className='lg:text-6xl md:text-4xl text-2xl font-bold text-white'>Find Your Dream House</h2>
-                    <p className='text-white text-lg'> Vitae saepe sapiente iste totam ducimus laboriosam. Ullam accusantium magnam earum expedita nemo perferendis ipsum quasi enim eveniet aut, est nostrum blanditiis?</p>
+                    <h2 className='lg:text-6xl md:text-4xl text-2xl font-bold text-white font-cursive'>Find Your Dream House</h2>
+                    <p className='text-white text-lg font-body'> Vitae saepe sapiente iste totam ducimus laboriosam. Ullam accusantium magnam earum expedita nemo perferendis ipsum quasi enim eveniet aut, est nostrum blanditiis?</p>
                     <div className='text-center flex gap-3 items-center justify-center'>
                         <button className="lg:py-3 md:py-3 py-2 px-5 rounded-md border-none text-white bg-red-600 ">Latest Project</button>
                         <button className="lg:py-3 md:py-3 py-2 px-5 rounded-md border  text-white border-white">More Details</button>
@@ -91,8 +91,8 @@ const Banner = () => {
                     <img src={slide4} className='h-[90vh] w-full' alt="" />
                     <div className="absolute flex items-center justify-center text-center left-0 top-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] h-full">
                     <div className='space-y-5 lg:w-1/2 md:w-1/2 w-full pl-10'>
-                    <h2 className='lg:text-6xl md:text-4xl text-2xl font-bold text-white'>Find Your Dream House</h2>
-                    <p className='text-white text-lg'> Vitae saepe sapiente iste totam ducimus laboriosam. Ullam accusantium magnam earum expedita nemo perferendis ipsum quasi enim eveniet aut, est nostrum blanditiis?</p>
+                    <h2 className='lg:text-6xl md:text-4xl text-2xl font-bold text-white font-cursive'>Find Your Dream House</h2>
+                    <p className='text-white text-lg font-body'> Vitae saepe sapiente iste totam ducimus laboriosam. Ullam accusantium magnam earum expedita nemo perferendis ipsum quasi enim eveniet aut, est nostrum blanditiis?</p>
                     <div className='text-center flex gap-3 items-center justify-center'>
                         <button className="lg:py-3 md:py-3 py-2 px-5 rounded-md border-none text-white bg-red-600 ">Latest Project</button>
                         <button className="lg:py-3 md:py-3 py-2 px-5 rounded-md border  text-white border-white">More Details</button>
@@ -104,8 +104,8 @@ const Banner = () => {
                     <img src={slide5} className='h-[90vh] w-full' alt="" />
                     <div className="absolute flex items-center justify-center text-center left-0 top-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] h-full">
                     <div className='space-y-5 lg:w-1/2 md:w-1/2 w-full pl-10'>
-                    <h2 className='lg:text-6xl md:text-4xl text-2xl font-bold text-white'>Find Your Dream House</h2>
-                    <p className='text-white text-lg'> Vitae saepe sapiente iste totam ducimus laboriosam. Ullam accusantium magnam earum expedita nemo perferendis ipsum quasi enim eveniet aut, est nostrum blanditiis?</p>
+                    <h2 className='lg:text-6xl md:text-4xl text-2xl font-bold text-white font-cursive'>Find Your Dream House</h2>
+                    <p className='text-white text-lg font-body'> Vitae saepe sapiente iste totam ducimus laboriosam. Ullam accusantium magnam earum expedita nemo perferendis ipsum quasi enim eveniet aut, est nostrum blanditiis?</p>
                     <div className='text-center flex gap-3 items-center justify-center'>
                         <button className="lg:py-3 md:py-3 py-2 px-5 rounded-md border-none text-white bg-red-600 ">Latest Project</button>
                         <button className="lg:py-3 md:py-3 py-2 px-5 rounded-md border  text-white border-white">More Details</button>
@@ -117,8 +117,8 @@ const Banner = () => {
                     <img src={slide6} className='h-[90vh] w-full' alt="" />
                     <div className="absolute flex items-center justify-center text-center left-0 top-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] h-full">
                     <div className='space-y-5 lg:w-1/2 md:w-1/2 w-full pl-10'>
-                    <h2 className='lg:text-6xl md:text-4xl text-2xl font-bold text-white'>Find Your Dream House</h2>
-                    <p className='text-white text-lg'> Vitae saepe sapiente iste totam ducimus laboriosam. Ullam accusantium magnam earum expedita nemo perferendis ipsum quasi enim eveniet aut, est nostrum blanditiis?</p>
+                    <h2 className='lg:text-6xl md:text-4xl text-2xl font-bold text-white font-cursive'>Find Your Dream House</h2>
+                    <p className='text-white text-lg font-body'> Vitae saepe sapiente iste totam ducimus laboriosam. Ullam accusantium magnam earum expedita nemo perferendis ipsum quasi enim eveniet aut, est nostrum blanditiis?</p>
                     <div className='text-center flex gap-3 items-center justify-center'>
                         <button className="lg:py-3 md:py-3 py-2 px-5 rounded-md border-none text-white bg-red-600 ">Latest Project</button>
                         <button className="lg:py-3 md:py-3 py-2 px-5 rounded-md border  text-white border-white">More Details</button>
