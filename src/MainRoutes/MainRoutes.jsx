@@ -3,7 +3,7 @@ import {
   } from "react-router-dom";
 import ManiLayouts from "../Layouts/ManiLayouts";
 import Home from "../Pages/Home/Home/Home";
-import Apartment from "../Pages/Home/Apartment/Apartment";
+import Apartment from "../Pages/Apartment/Apartment";
 
   const MyCreateRoute = createBrowserRouter([
     {

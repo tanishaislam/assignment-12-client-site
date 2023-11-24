@@ -1,10 +1,10 @@
+import Banner from "../Banner/Banner";
 
 
 const Home = () => {
     return (
-        <div>
-            this is home
-            thi his lkolo
+        <div className="container mx-auto mt-2">
+            <Banner></Banner>
         </div>
     );
 };
