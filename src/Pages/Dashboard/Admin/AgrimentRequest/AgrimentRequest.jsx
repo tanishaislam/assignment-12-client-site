@@ -1,7 +1,55 @@
+import Swal from "sweetalert2";
 import useCart from "../../../../Hooks/useCart";
+import useAxiosSecure from "../../../../Hooks/useAxiosSecure";
+import toast from "react-hot-toast";
 
 const AgrimentRequest = () => {
-    const [cart] = useCart()
+    const [cart, refetch] = useCart();
+    const axiosSecure = useAxiosSecure();
+    const handleReject =(items)=>{
+        axiosSecure.patch(`/carts/user/${items._id}`)
+        .then(res => {
+            console.log(res.data)
+            if(res.data.modifiedCount > 0){
+                toast.success(`${items.name} is an member now`)
+            }
+        })
+        // Swal.fire({
+        //     title: "Are you sure?",
+        //     text: "You won't be able to revert this!",
+        //     icon: "warning",
+        //     showCancelButton: true,
+        //     confirmButtonColor: "#3085d6",
+        //     cancelButtonColor: "#d33",
+        //     confirmButtonText: "Yes, delete it!"
+        //   }).then((result) => {
+        //     if (result.isConfirmed) {
+        //         axiosSecure.delete(`/carts/${items._id}`)
+        //         .then(res =>{
+        //             if(res.data?.deletedCount > 0){
+        //                 refetch()
+        //             Swal.fire({
+        //                 title: "Deleted!",
+        //                 text: "Your file has been deleted.",
+        //                 icon: "success"
+        //             });
+        //             }
+        //         })
+            
+        //     }
+        //   });
+    }
+
+
+    const handleMakeMember = (user)=>{
+        axiosSecure.patch(`/carts/member/${user._id}`)
+        .then(res => {
+            console.log(res.data)
+            if(res.data.modifiedCount > 0){
+                toast.success(`${user.name} is an member now`)
+            }
+        })
+    }
     return (
         <div>
             <div>
@@ -31,8 +79,15 @@ const AgrimentRequest = () => {
                             <td>{items.block_name}</td>
                             <td>{items.rent}</td>
                             <td>{items.apartment_no}</td>
-                            <td><button className="bg-green-500 text-white px-3 py-1 font-semibold rounded-md">Accept</button></td>
-                            <td><button className="bg-red-500 text-white text-md px-3 py-1 font-semibold rounded-md">Reject</button></td>
+                            <td>
+                                {
+                                    items.role === 'member'? 
+                                    'member' :  items.role === 'user'?
+                                    'user':
+                                    <button onClick={()=>handleMakeMember(items)}  className="bg-green-500 text-white px-3 py-1 font-semibold rounded-md">Accept</button>
+                                }
+                            </td>
+                            <td><button onClick={()=>handleReject(items)} className="bg-red-500 text-white text-md px-3 py-1 font-semibold rounded-md">Reject</button></td>
                         </tr>
                         )
                     }

@@ -4,14 +4,14 @@ import useAxiosSecure from "./useAxiosSecure";
 
 const useCart = () => {
     const axiosSecure = useAxiosSecure();
-    const {data: cart=[]} = useQuery({
+    const {data: cart=[], refetch} = useQuery({
         queryKey: ['cart'],
         queryFn: async ()=>{
             const res = await axiosSecure.get(`/carts`)
             return res.data;
         }
     })
-    return [cart]
+    return [cart, refetch]
 };
 
 export default useCart;
