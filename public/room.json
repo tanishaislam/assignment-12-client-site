@@ -1,0 +1,58 @@
+[
+    {
+        "_id": "234678jkdiei3677722",
+        "image": "https://i.ibb.co/zNfdGpc/this-is-art-inspired-Scandinavian-style-apartment-1-scaled.jpg",
+        "floor_no": 3,
+        "block_name": "Willow Towers",
+        "apartment_no": 301,
+        "rent": 1100
+    },
+    {
+        "_id": "234678jkdiei367772k",
+        "image": "https://i.ibb.co/PMtr65s/95fa4225956143-5634d95ec9acf.jpg",
+        "floor_no": 8,
+        "block_name": "Pine Ridge Apartments",
+        "apartment_no": 804,
+        "rent": 1500
+    },
+    {
+        "_id": "234678jkdiei367772o",
+        "image": "https://i.ibb.co/xmRyn6w/photo-1631679706909-1844bbd07221.jpg",
+        "floor_no": 5,
+        "block_name": "Maple Grove Residences",
+        "apartment_no": 501,
+        "rent": 1300
+    },
+    {
+        "_id": "234678jkdiei3477722",
+        "image": "https://i.ibb.co/jH7TLz8/istockphoto-1182454657-612x612.jpg",
+        "floor_no": 1,
+        "block_name": "Cypress Heights",
+        "apartment_no": 123,
+        "rent": 1800
+    },
+    {
+        "_id": "234678jkd7ei3677722",
+        "image": "https://i.ibb.co/g70GCrW/The-Nordroom-ASmall-Lightand-Beautiful-Scandinavian-Apartment.jpg",
+        "floor_no": 2,
+        "block_name": "Oakwood Tower",
+        "apartment_no": 203,
+        "rent": 1000
+    },
+    {
+        "_id": "23467858kdiei3677722",
+        "image": "https://i.ibb.co/vHFRccW/PROMO-Fantastic-Frank-b5a986d29b2345abbb3cf53532829f09.jpg",
+        "floor_no": 6,
+        "block_name": "Sycamore Apartments",
+        "apartment_no": 602,
+        "rent": 1400
+    },
+    {
+        "_id": "234678jkdi4ei3677722",
+        "image": "https://i.ibb.co/KLnKZbR/conservatory-with-chairs-plants-glass-doors-305343-47275.jpg",
+        "floor_no": 4,
+        "block_name": "Cedar View Residences",
+        "apartment_no": 402,
+        "rent": 1200
+    }
+  ]

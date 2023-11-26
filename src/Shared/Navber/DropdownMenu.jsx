@@ -1,12 +1,13 @@
 
-import { useState } from "react";
+import { useContext, useState } from "react";
 import userImg from '../../assets/user.jpg'
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProviders";
 
 
 const DropdownMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
-
+    const {user, logOut} = useContext(AuthContext)
     return (
         <div>
             <div className='relative'>
@@ -21,7 +22,7 @@ const DropdownMenu = () => {
                         <img
                         className='rounded-full'
                         referrerPolicy='no-referrer'
-                        src={userImg}
+                        src={user && user.photoURL ? user.photoURL : userImg}
                         alt='profile'
                         height='30'
                         width='30'
@@ -30,7 +31,7 @@ const DropdownMenu = () => {
                     </div>
                 </div>
                 {isOpen && (
-                    <div className='absolute rounded-xl shadow-md w-[40vw] md:w-[10vw] bg-white overflow-hidden right-0 top-12 text-sm'>
+                    <div className='absolute z-50 rounded-xl shadow-md w-[40vw] md:w-[10vw] bg-white overflow-hidden right-0 top-12 text-sm'>
                     <div className='flex flex-col cursor-pointer'>
                         <Link
                         to='/'
@@ -38,34 +39,17 @@ const DropdownMenu = () => {
                         >
                         Home
                         </Link>
-
-                        {/* {
-                        user? <> */}
+                        <p disabled className='px-4 py-3 font-semibold cursor-text bg-gray-50'>{user && user?.displayName }</p>
                             <Link
-                            to='/dashboard'
+                            to='/dashboard/userProfile'
                             className='px-4 py-3 hover:bg-neutral-100 transition font-semibold'
                             >
                             Dashboard
                             </Link>
-                            <div  className='px-4 py-3 hover:bg-neutral-100 transition font-semibold cursor-pointer'>
+                            <div onClick={logOut} className='px-4 py-3 hover:bg-neutral-100 transition font-semibold cursor-pointer'>
                             Log Out
                             </div>
                         
-                        {/* </>:<> */}
-                            <Link
-                            to='/login'
-                            className='px-4 py-3 hover:bg-neutral-100 transition font-semibold'
-                        >
-                            Login
-                        </Link>
-                        <Link
-                            to='/signup'
-                            className='px-4 py-3 hover:bg-neutral-100 transition font-semibold'
-                        >
-                            Sign Up
-                        </Link>
-                        {/* </> */}
-                        {/* // } */}
                     </div>
                     </div>
                 )}

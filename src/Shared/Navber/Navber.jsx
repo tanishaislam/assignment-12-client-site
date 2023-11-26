@@ -2,10 +2,12 @@
 import { Link } from "react-router-dom";
 import DropdownMenu from "./DropdownMenu";
 import NavLogo from "./NavLogo";
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/AuthProviders";
 
 
 const Navber = () => {
-
+    const {user} = useContext(AuthContext)
     const navItem = <>
        <li><Link to='/' className="font-semibold text-md">Home</Link></li>
        <li><Link to='/apartment' className="font-semibold text-md">Apartment</Link></li>    
@@ -31,7 +33,11 @@ const Navber = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <DropdownMenu/>
+                    {
+                        user? <DropdownMenu/>:<button className="bg-black text-white font-semibold py-2 px-4 rounded-md"><Link to='/login'>login</Link></button>
+                    }
+                    
+                    
                 </div>
                 </div>
         </div>

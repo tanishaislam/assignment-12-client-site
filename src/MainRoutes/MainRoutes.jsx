@@ -4,6 +4,13 @@ import {
 import ManiLayouts from "../Layouts/ManiLayouts";
 import Home from "../Pages/Home/Home/Home";
 import Apartment from "../Pages/Apartment/Apartment";
+import Login from "../Pages/Login/Login";
+import SignUp from "../Pages/SignUP/SignUp";
+import Dashboard from "./Dashboard/Dashboard";
+import UsersProfile from "../Pages/Dashboard/users/usersProfile";
+import Announcements from "../Pages/Dashboard/users/Announcements";
+import PrivateRoutes from "./PrivateRoutes";
+import AgrimentRequest from "../Pages/Dashboard/Admin/AgrimentRequest/AgrimentRequest";
 
   const MyCreateRoute = createBrowserRouter([
     {
@@ -20,6 +27,28 @@ import Apartment from "../Pages/Apartment/Apartment";
         },
       ]
     },
+    { path: '/login', element: <Login /> },
+    { path: '/signup', element: <SignUp /> },
+    {
+      path: '/dashboard',
+      element: <PrivateRoutes><Dashboard></Dashboard></PrivateRoutes>,
+      children:[
+        {
+          path: 'userProfile',
+          element:<UsersProfile></UsersProfile>
+        },
+        {
+          path: 'announcements',
+          element:<Announcements></Announcements>
+        },
+
+        //admin
+        {
+          path: 'agreementRequests',
+          element:<AgrimentRequest></AgrimentRequest>
+        }
+      ]
+    }
   ]);
 
 export default MyCreateRoute;
