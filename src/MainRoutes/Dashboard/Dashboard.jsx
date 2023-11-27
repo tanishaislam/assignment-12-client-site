@@ -6,72 +6,20 @@ import { RiUserVoiceFill } from "react-icons/ri";
 import { PiUsersThreeFill } from "react-icons/pi";
 import { PiFolderUserBold } from "react-icons/pi";
 import { TbShoppingBagDiscount } from "react-icons/tb";
+import useCart from "../../Hooks/useCart";
+import useAuth from "../../Hooks/useAuth";
 
 const Dashboard = () => {
-    const isAdmin = true;
+    // const isAdmin = true;
+    const {user} = useAuth();
+    const [carts] = useCart()
+    // const fil = carts.filter(filt => filt.role)
+    const car = carts.find(cars => cars.userEmail === user?.email)
+    // if(user.email === car.email){
+    //     console.log('good')
+    // }
     return (
         <div className="flex">
-        {/* <div className="w-64 min-h-screen bg-gray-600 text-white px-5">
-            <div className="py-7">
-                <h1 className="text-2xl font-semibold uppercase text-center">Beautiful House</h1>
-                <p className="text-center font-semibold py-1">Happy lifes</p>
-            </div>
-            <ul className="menu uppercase space-y-2">  
-            {
-                isAdmin?<>
-                <li>
-                    <NavLink to='/dashboard/adminProfile'>
-                    <FaUserCog />
-                        Admin Profile
-                    </NavLink>
-                </li> 
-                <li>
-                    <NavLink to='/dashboard/manageMembers'>
-                    <PiUsersThreeFill />
-                        Manage Members
-                    </NavLink>
-                </li> 
-                <li>
-                    <NavLink to='/dashboard/makeAnnouncements'>
-                    <RiUserVoiceFill />
-                    Announcements
-                    </NavLink>
-                </li> 
-                <li>
-                    <NavLink to='/dashboard/agreementRequests'>
-                    <PiFolderUserBold />
-                    Agreement Requests
-                    </NavLink>
-                </li> 
-                <li>
-                    <NavLink to='/dashboard/manageCoupons'>
-                    <TbShoppingBagDiscount />
-                    Manage Coupons
-                    </NavLink>
-                </li>   
-                
-                </>:
-                <>
-                <li>
-                    <NavLink to='/dashboard/userProfile'>
-                    <FaUserLarge />
-                        My Profile
-                    </NavLink>
-                </li> 
-                <li>
-                    <NavLink to='/dashboard/announcements'>
-                    <GrAnnounce />
-                        Announcements
-                    </NavLink>
-                </li>   
-                </>
-            } 
-                            
-            </ul>
-        </div>
-        <div className="flex-1 p-10">
-            <Outlet></Outlet>
-        </div> */}
        <div className="drawer lg:drawer-open">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col ">
@@ -95,8 +43,76 @@ const Dashboard = () => {
                 <p className="text-center font-semibold py-1">Happy lifes</p>
                 </span>
                 {/* Sidebar content here */}
+                {/* {
+                    user?.email ?<>
+                    <li>
+                        <NavLink to='/dashboard/userProfile'>
+                        <FaUserLarge />
+                            My Profile
+                        </NavLink>
+                    </li> 
+                    <li>
+                        <NavLink to='/dashboard/announcements'>
+                        <GrAnnounce />
+                            Announcements
+                        </NavLink>
+                    </li>   
+                    </>:'' 
+                } */}
+                {
+                    car?.role? '':
+                    <>
+                    <li>
+                        <NavLink to='/dashboard/userProfile'>
+                        <FaUserLarge />
+                            My Profile
+                        </NavLink>
+                    </li> 
+                    <li>
+                        <NavLink to='/dashboard/announcements'>
+                        <GrAnnounce />
+                            Announcements
+                        </NavLink>
+                    </li>   
+                    </>
+                }
+                {
+                    car?.role === 'member'? <>
+                    <li>
+                        <NavLink to='/dashboard/adminProfile'>
+                        <FaUserCog />
+                        My Profile
+                        </NavLink>
+                    </li> 
+                    <li>
+                        <NavLink to='/dashboard/manageMembers'>
+                        <PiUsersThreeFill />
+                        Make payment
+                        </NavLink>
+                    </li> 
+                    <li>
+                        <NavLink to='/dashboard/makeAnnouncements'>
+                        <RiUserVoiceFill />
+                        Payment History
+                        </NavLink>
+                    </li> 
+                    <li>
+                        <NavLink to='/dashboard/agreementRequests'>
+                        <PiFolderUserBold />
+                        Announcements
+                        </NavLink>
+                    </li> 
+                    <li>
+                        <NavLink to='/dashboard/manageCoupons'>
+                        <TbShoppingBagDiscount />
+                        Manage Coupons
+                        </NavLink>
+                    </li>   
+                    
+                    </>: ' '
+                }
                     {
-                    isAdmin?<>
+                    car?.role === 'admin'?<>
                     <li>
                         <NavLink to='/dashboard/adminProfile'>
                         <FaUserCog />
@@ -128,21 +144,7 @@ const Dashboard = () => {
                         </NavLink>
                     </li>   
                     
-                    </>:
-                    <>
-                    <li>
-                        <NavLink to='/dashboard/userProfile'>
-                        <FaUserLarge />
-                            My Profile
-                        </NavLink>
-                    </li> 
-                    <li>
-                        <NavLink to='/dashboard/announcements'>
-                        <GrAnnounce />
-                            Announcements
-                        </NavLink>
-                    </li>   
-                    </>
+                    </>:' '
                 } 
                 </ul>
             

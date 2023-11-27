@@ -2,11 +2,13 @@ import Swal from "sweetalert2";
 import useAuth from "../../Hooks/useAuth";
 import { useLocation, useNavigate } from "react-router-dom";
 import useAxiosSecure from "../../Hooks/useAxiosSecure";
+import useUsers from "../../api/useUsers";
 
 
 const AppartmentCard = ({items}) => {
     const {image, floor_no, block_name, apartment_no, rent} = items;
     const {user} = useAuth();
+    const [users] = useUsers();
     const navigate = useNavigate();
      const location = useLocation()
      const axiosSecure = useAxiosSecure();
@@ -21,7 +23,7 @@ const AppartmentCard = ({items}) => {
                 block_name,
                 apartment_no,
                 rent,
-                status: 'pending'
+                status: 'pending',
             }
             axiosSecure.post('/carts', cartItems)
             .then(res => {

@@ -11,6 +11,7 @@ import UsersProfile from "../Pages/Dashboard/users/usersProfile";
 import Announcements from "../Pages/Dashboard/users/Announcements";
 import PrivateRoutes from "./PrivateRoutes";
 import AgrimentRequest from "../Pages/Dashboard/Admin/AgrimentRequest/AgrimentRequest";
+import ManageMember from "../Pages/Dashboard/Admin/ManageMember/ManageMember";
 
   const MyCreateRoute = createBrowserRouter([
     {
@@ -46,6 +47,10 @@ import AgrimentRequest from "../Pages/Dashboard/Admin/AgrimentRequest/AgrimentRe
         {
           path: 'agreementRequests',
           element:<AgrimentRequest></AgrimentRequest>
+        },
+        {
+          path: 'manageMembers',
+          element: <ManageMember></ManageMember>
         }
       ]
     }
