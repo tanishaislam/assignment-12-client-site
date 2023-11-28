@@ -85,13 +85,13 @@ const Dashboard = () => {
                         </NavLink>
                     </li> 
                     <li>
-                        <NavLink to='/dashboard/manageMembers'>
+                        <NavLink to='/dashboard/makePayment'>
                         <PiUsersThreeFill />
                         Make payment
                         </NavLink>
                     </li> 
                     <li>
-                        <NavLink to='/dashboard/makeAnnouncements'>
+                        <NavLink to='/dashboard/paymentHistory'>
                         <RiUserVoiceFill />
                         Payment History
                         </NavLink>
@@ -101,13 +101,7 @@ const Dashboard = () => {
                         <PiFolderUserBold />
                         Announcements
                         </NavLink>
-                    </li> 
-                    <li>
-                        <NavLink to='/dashboard/manageCoupons'>
-                        <TbShoppingBagDiscount />
-                        Manage Coupons
-                        </NavLink>
-                    </li>   
+                    </li>  
                     
                     </>: ' '
                 }
@@ -128,19 +122,19 @@ const Dashboard = () => {
                     <li>
                         <NavLink to='/dashboard/makeAnnouncements'>
                         <RiUserVoiceFill />
-                        Announcements
+                            Announcements
                         </NavLink>
                     </li> 
                     <li>
                         <NavLink to='/dashboard/agreementRequests'>
                         <PiFolderUserBold />
-                        Agreement Requests
+                            Agreement Requests
                         </NavLink>
                     </li> 
                     <li>
                         <NavLink to='/dashboard/manageCoupons'>
                         <TbShoppingBagDiscount />
-                        Manage Coupons
+                            Manage Coupons
                         </NavLink>
                     </li>   
                     

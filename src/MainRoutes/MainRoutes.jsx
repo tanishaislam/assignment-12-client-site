@@ -15,6 +15,9 @@ import ManageMember from "../Pages/Dashboard/Admin/ManageMember/ManageMember";
 import AdminAnous from "../Pages/Dashboard/Admin/AdminAnous/AdminAnous";
 import MemberAnous from "../Pages/Dashboard/Member/MemberAnous/MemberAnous";
 import MemberProfile from "../Pages/Dashboard/Member/MemberProfile/MemberProfile";
+import MakePayment from "../Pages/Dashboard/Member/MakePayment/MakePayment";
+import PaymentNow from "../Pages/Dashboard/Member/MakePayment/PaymentNow";
+import PaymentHistory from "../Pages/Dashboard/Member/MakePayment/PaymentHistory";
 
   const MyCreateRoute = createBrowserRouter([
     {
@@ -40,34 +43,46 @@ import MemberProfile from "../Pages/Dashboard/Member/MemberProfile/MemberProfile
       children:[
         {
           path: 'userProfile',
-          element:<UsersProfile></UsersProfile>
+          element:<PrivateRoutes><UsersProfile></UsersProfile></PrivateRoutes>
         },
         {
           path: 'announcements',
-          element:<Announcements></Announcements>
+          element:<PrivateRoutes><Announcements></Announcements></PrivateRoutes>
         },
         //member
         {
           path: 'memberAnous',
-          element:<MemberAnous></MemberAnous>
+          element:<PrivateRoutes><MemberAnous></MemberAnous></PrivateRoutes>
         },
         {
           path:'memberProfile',
-          element:<MemberProfile></MemberProfile>
+          element:<PrivateRoutes><MemberProfile></MemberProfile></PrivateRoutes>
+        },
+        {
+          path: 'makePayment',
+          element:<MakePayment></MakePayment>
+        },
+        {
+          path: 'paymentNow',
+          element:<PaymentNow></PaymentNow>
+        },
+        {
+          path: 'paymentHistory',
+          element:<PaymentHistory></PaymentHistory>
         },
 
         //admin
         {
           path: 'agreementRequests',
-          element:<AgrimentRequest></AgrimentRequest>
+          element:<PrivateRoutes><AgrimentRequest></AgrimentRequest></PrivateRoutes>
         },
         {
           path: 'manageMembers',
-          element: <ManageMember></ManageMember>
+          element: <PrivateRoutes><ManageMember></ManageMember></PrivateRoutes>
         },
         {
           path: 'makeAnnouncements',
-          element: <AdminAnous></AdminAnous>
+          element: <PrivateRoutes><AdminAnous></AdminAnous></PrivateRoutes>
         }
       ]
     }
