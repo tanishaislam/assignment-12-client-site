@@ -12,6 +12,9 @@ import Announcements from "../Pages/Dashboard/users/Announcements";
 import PrivateRoutes from "./PrivateRoutes";
 import AgrimentRequest from "../Pages/Dashboard/Admin/AgrimentRequest/AgrimentRequest";
 import ManageMember from "../Pages/Dashboard/Admin/ManageMember/ManageMember";
+import AdminAnous from "../Pages/Dashboard/Admin/AdminAnous/AdminAnous";
+import MemberAnous from "../Pages/Dashboard/Member/MemberAnous/MemberAnous";
+import MemberProfile from "../Pages/Dashboard/Member/MemberProfile/MemberProfile";
 
   const MyCreateRoute = createBrowserRouter([
     {
@@ -24,7 +27,8 @@ import ManageMember from "../Pages/Dashboard/Admin/ManageMember/ManageMember";
         },
         {
             path: 'apartment',
-            element:<Apartment></Apartment>
+            element:<Apartment></Apartment>,
+            loader: ()=> fetch('http://localhost:5000/roomsCount')
         },
       ]
     },
@@ -42,6 +46,15 @@ import ManageMember from "../Pages/Dashboard/Admin/ManageMember/ManageMember";
           path: 'announcements',
           element:<Announcements></Announcements>
         },
+        //member
+        {
+          path: 'memberAnous',
+          element:<MemberAnous></MemberAnous>
+        },
+        {
+          path:'memberProfile',
+          element:<MemberProfile></MemberProfile>
+        },
 
         //admin
         {
@@ -51,6 +64,10 @@ import ManageMember from "../Pages/Dashboard/Admin/ManageMember/ManageMember";
         {
           path: 'manageMembers',
           element: <ManageMember></ManageMember>
+        },
+        {
+          path: 'makeAnnouncements',
+          element: <AdminAnous></AdminAnous>
         }
       ]
     }

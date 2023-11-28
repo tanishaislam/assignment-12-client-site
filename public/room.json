@@ -54,5 +54,141 @@
         "block_name": "Cedar View Residences",
         "apartment_no": 402,
         "rent": 1200
+    },
+    {
+        "_id": "234678jkdi4ei3677721",
+        "image": "https://i.ibb.co/YL680bQ/deborah-cortelazzi-g-REqu-CUXQLI-unsplash.jpg",
+        "floor_no": 4,
+        "block_name": "Cedar View Residences",
+        "apartment_no": 402,
+        "rent": 1200
+    },
+    {
+        "_id": "234678jkdi4ei36777222",
+        "image": "https://i.ibb.co/5kjfTKS/lissete-laverde-8-I39-EMOip-Rw-unsplash.jpg",
+        "floor_no": 4,
+        "block_name": "Cedar View Residences",
+        "apartment_no": 402,
+        "rent": 100
+    },
+    {
+        "_id": "234678jkdi4ei36777233",
+        "image": "https://i.ibb.co/Hdb2XHF/adam-winger-t4o-VP2x-FMJ8-unsplash.jpg",
+        "floor_no": 4,
+        "block_name": "Cedar View Residences",
+        "apartment_no": 402,
+        "rent": 1300
+    },
+    {
+        "_id": "234678jkdi4ei36777244",
+        "image": "https://i.ibb.co/4KZbD1Y/adam-winger-b87-eg-H5mos-unsplash.jpg",
+        "floor_no": 5,
+        "block_name": "Cedar View Residences",
+        "apartment_no": 403,
+        "rent": 1300
+    },
+    {
+        "_id": "234678jkdi4ei36777255",
+        "image": "https://i.ibb.co/xfyYQfT/spacejoy-n-Etpv-Jjn-PVo-unsplash.jpg",
+        "floor_no": 5,
+        "block_name": "Cedar View Residences",
+        "apartment_no": 503,
+        "rent": 5100
+    },
+    {
+        "_id": "234678jkdi4ei36777266",
+        "image": "https://i.ibb.co/JxwsbNb/kara-eads-L7-Ew-Hkq1-B2s-unsplash.jpg",
+        "floor_no": 6,
+        "block_name": "Cedar View Residences",
+        "apartment_no": 603,
+        "rent": 6100
+    },
+    {
+        "_id": "234678jkdi4ei36777277",
+        "image": "https://i.ibb.co/LxwtDH0/spacejoy-WQ35-C1-Zq-CPk-unsplash.jpg",
+        "floor_no": 6,
+        "block_name": "Cedar View Residences",
+        "apartment_no": 603,
+        "rent": 6100
+    },
+    {
+        "_id": "234678jkdi4ei36777288",
+        "image": "https://i.ibb.co/mByb1Hq/spacejoy-p4y-WCNA2-6-Q-unsplash.jpg",
+        "floor_no": 7,
+        "block_name": "Cedar View Residences",
+        "apartment_no": 653,
+        "rent": 1100
+    },
+    {
+        "_id": "234678jkdi4ei36777299",
+        "image": "https://i.ibb.co/G7JGK5d/spacejoy-RUv-W1-KGD9a4-unsplash.jpg",
+        "floor_no": 7,
+        "block_name": "Cedar View Residences",
+        "apartment_no": 653,
+        "rent": 1900
+    },
+    {
+        "_id": "234678jkdi4ei36777210",
+        "image": "https://i.ibb.co/c6RZSJ1/bc1cdc0036620b0913d72dbd36ba8222.jpg",
+        "floor_no": 7,
+        "block_name": "Cedar View Residences",
+        "apartment_no": 653,
+        "rent": 9900
+    },
+    {
+        "_id": "234678jkdi4ei367772111",
+        "image": "https://i.ibb.co/0rj27vV/spacious-room-with-various-areas-305343-43227.jpg",
+        "floor_no": 7,
+        "block_name": "Cedar View Residences",
+        "apartment_no": 653,
+        "rent": 9900
+    },
+    {
+        "_id": "234678jkdi4ei367772112",
+        "image": "https://i.ibb.co/5kjfTKS/lissete-laverde-8-I39-EMOip-Rw-unsplash.jpg",
+        "floor_no": 7,
+        "block_name": "Cedar View Residences",
+        "apartment_no": 653,
+        "rent": 9900
+    },
+    {
+        "_id": "234678jkdiei367772k13",
+        "image": "https://i.ibb.co/RNwrrHy/r-architecture-8o-Nh-Tvu-BZ7g-unsplash.jpg",
+        "floor_no": 8,
+        "block_name": "Pine Ridge Apartments",
+        "apartment_no": 804,
+        "rent": 1500
+    },
+    {
+        "_id": "234678jkdiei367772k14",
+        "image": "https://i.ibb.co/XjzL10m/r-architecture-khp-WE85ge38-unsplash.jpg",
+        "floor_no": 8,
+        "block_name": "Pine Ridge Apartments",
+        "apartment_no": 804,
+        "rent": 1540
+    },
+    {
+        "_id": "234678jkdiei367772k15",
+        "image": "https://i.ibb.co/wL3jMWL/r-architecture-r-Ok4-VSMS3-Ck-unsplash.jpg",
+        "floor_no": 8,
+        "block_name": "Pine Ridge Apartments",
+        "apartment_no": 804,
+        "rent": 1540
+    },
+    {
+        "_id": "234678jkdiei367772k16",
+        "image": "https://i.ibb.co/XD1B6sF/r-architecture-TRCJ-87-Yoh0-unsplash.jpg",
+        "floor_no": 8,
+        "block_name": "Pine Ridge Apartments",
+        "apartment_no": 804,
+        "rent": 1540
+    },
+    {
+        "_id": "234678jkdiei367772k17",
+        "image": "https://i.ibb.co/zVZ2w0R/r-architecture-T6d96-Qrb5-MY-unsplash.jpg",
+        "floor_no": 8,
+        "block_name": "Pine Ridge Apartments",
+        "apartment_no": 804,
+        "rent": 1540
     }
   ]

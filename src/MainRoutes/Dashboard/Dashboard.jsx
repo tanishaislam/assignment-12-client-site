@@ -30,7 +30,7 @@ const Dashboard = () => {
                     </label>
                 </div>
                 {/* Page content here */}
-                <div className="w-10/12 mx-auto mt-16">
+                <div className="lg:w-10/12 w-11/12 mx-auto mt-16">
                 <Outlet></Outlet>
                 </div>
             </div> 
@@ -69,7 +69,7 @@ const Dashboard = () => {
                         </NavLink>
                     </li> 
                     <li>
-                        <NavLink to='/dashboard/announcements'>
+                        <NavLink to='/dashboard/memberAnous'>
                         <GrAnnounce />
                             Announcements
                         </NavLink>
@@ -79,7 +79,7 @@ const Dashboard = () => {
                 {
                     car?.role === 'member'? <>
                     <li>
-                        <NavLink to='/dashboard/adminProfile'>
+                        <NavLink to='/dashboard/memberProfile'>
                         <FaUserCog />
                         My Profile
                         </NavLink>
@@ -97,7 +97,7 @@ const Dashboard = () => {
                         </NavLink>
                     </li> 
                     <li>
-                        <NavLink to='/dashboard/agreementRequests'>
+                        <NavLink to='/dashboard/memberAnous'>
                         <PiFolderUserBold />
                         Announcements
                         </NavLink>
