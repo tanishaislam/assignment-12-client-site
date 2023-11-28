@@ -6,12 +6,12 @@ import { SiInfluxdb } from "react-icons/si";
 const AboutTheBuild = () => {
     return (
         <div>
-            <div className="text-center py-20">
+            <div className="text-center py-20 ">
                 <h1 className="font-semibold font-cursive text-5xl">About the building</h1>
                 <p className="w-1/2 m-auto pt-5 font-body">neque tenetur ipsum totam, quas laboriosam mollitia reiciendis. Provident magni placeat neque! Quo eligendi voluptates assumenda quibusdam quidem reiciendis sed!</p>
                 <p className="border-b h-1 w-24 m-auto bg-black border-black mt-4"></p>
             </div>
-            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mb-16">
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mb-32">
                 <div className="text-center border p-6">
                     <div className="pb-4"> 
                     <IoBarChartSharp className="text-3xl m-auto" />
