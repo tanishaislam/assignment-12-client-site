@@ -31,7 +31,7 @@ import PaymentHistory from "../Pages/Dashboard/Member/MakePayment/PaymentHistory
         {
             path: 'apartment',
             element:<Apartment></Apartment>,
-            loader: ()=> fetch('http://localhost:5000/roomsCount')
+            loader: ()=> fetch('https://asignment-12-server-one.vercel.app/roomsCount')
         },
       ]
     },
@@ -47,7 +47,7 @@ import PaymentHistory from "../Pages/Dashboard/Member/MakePayment/PaymentHistory
         },
         {
           path: 'announcements',
-          element:<PrivateRoutes><Announcements></Announcements></PrivateRoutes>
+          element:<PrivateRoutes><MemberAnous></MemberAnous></PrivateRoutes>
         },
         //member
         {
@@ -60,15 +60,15 @@ import PaymentHistory from "../Pages/Dashboard/Member/MakePayment/PaymentHistory
         },
         {
           path: 'makePayment',
-          element:<MakePayment></MakePayment>
+          element:<PrivateRoutes><MakePayment></MakePayment></PrivateRoutes>
         },
         {
           path: 'paymentNow',
-          element:<PaymentNow></PaymentNow>
+          element:<PrivateRoutes><PaymentNow></PaymentNow></PrivateRoutes>
         },
         {
           path: 'paymentHistory',
-          element:<PaymentHistory></PaymentHistory>
+          element:<PrivateRoutes><PaymentHistory></PaymentHistory></PrivateRoutes>
         },
 
         //admin

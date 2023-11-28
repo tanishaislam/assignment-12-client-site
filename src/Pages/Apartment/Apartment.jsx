@@ -20,7 +20,7 @@ const Apartment = () => {
     // const pages = [...Array(numberOfPage).keys()]
     useEffect(()=>{
         setLoading(true)
-        axios.get(`http://localhost:5000/rooms?page=${currentPage}`)
+        axios.get(`https://asignment-12-server-one.vercel.app/rooms?page=${currentPage}`)
         .then(res =>{
              setAppartments(res.data)
              setLoading(false)
