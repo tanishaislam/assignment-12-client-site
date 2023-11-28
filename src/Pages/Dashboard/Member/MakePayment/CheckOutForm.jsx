@@ -92,6 +92,7 @@ const CheckOutForm = () => {
                 style: {
                     base: {
                     fontSize: '16px',
+                    padding: '5px',
                     color: '#424770',
                     '::placeholder': {
                         color: '#aab7c4',
@@ -103,7 +104,7 @@ const CheckOutForm = () => {
                 },
                 }}
             />
-            <button className="bg-black text-white btn mt-4" type="submit" disabled={!stripe}>
+            <button className="bg-black text-white btn mt-8 px-10 " type="submit" disabled={!stripe}>
                 Pay
             </button>
             <p className="text-red-500">{error}</p>

@@ -97,8 +97,7 @@ const AgrimentRequest = () => {
                             <td>
                                 {
                                     items.role === 'member'? 
-                                    'member' :  items.role === 'user'?
-                                    'user':
+                                    'member' : 
                                     <button onClick={()=>handleMakeMember(items)}  className="bg-green-500 text-white px-3 py-1 font-semibold rounded-md">Accept</button>
                                 }
                             </td>

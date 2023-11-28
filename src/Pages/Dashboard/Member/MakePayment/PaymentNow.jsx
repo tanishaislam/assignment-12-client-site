@@ -11,7 +11,7 @@ const PaymentNow = () => {
                 <div className="border-b-2 w-20 m-auto py-2 border-zinc-500 mb-16"></div>
             </div>
 
-            <div>
+            <div className="w-7/12 m-auto mt-28">
                 <Elements stripe={stripePromise}>
                     <CheckOutForm></CheckOutForm>
                 </Elements>

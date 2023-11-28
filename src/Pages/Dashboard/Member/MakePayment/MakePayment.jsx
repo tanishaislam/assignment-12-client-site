@@ -7,7 +7,7 @@ const MakePayment = () => {
     const [carts] = useCart()
     const fil = carts.filter(filt => filt.role === 'member')
     const userfind = fil.filter(fin => fin.userEmail === user?.email)
-    console.log(userfind)
+
     return (
         <div>
             <div>
@@ -18,7 +18,7 @@ const MakePayment = () => {
             <div className="w-7/12 m-auto">
             {
                 userfind.map(items => <>
-                <form className="card-body" key={items._id}>
+                <form className="card-body" key={items?._id}>
                     <div className="flex lg:flex-row flex-col gap-5">
                         <div className="form-control">
                         <label className="label">

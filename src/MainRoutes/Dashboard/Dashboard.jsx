@@ -43,7 +43,7 @@ const Dashboard = () => {
                 <p className="text-center font-semibold py-1">Happy lifes</p>
                 </span>
                 {/* Sidebar content here */}
-                {/* {
+                {
                     user?.email ?<>
                     <li>
                         <NavLink to='/dashboard/userProfile'>
@@ -58,9 +58,9 @@ const Dashboard = () => {
                         </NavLink>
                     </li>   
                     </>:'' 
-                } */}
-                {
-                    car?.role? '':
+                }
+                {/* {
+                    car?.role === ''?
                     <>
                     <li>
                         <NavLink to='/dashboard/userProfile'>
@@ -74,8 +74,8 @@ const Dashboard = () => {
                             Announcements
                         </NavLink>
                     </li>   
-                    </>
-                }
+                    </>: ' '
+                } */}
                 {
                     car?.role === 'member'? <>
                     <li>

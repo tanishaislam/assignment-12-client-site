@@ -24,6 +24,7 @@ const AppartmentCard = ({items}) => {
                 apartment_no,
                 rent,
                 status: 'pending',
+                role: 'user'
             }
             axiosSecure.post('/carts', cartItems)
             .then(res => {
